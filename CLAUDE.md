@@ -31,7 +31,9 @@
     - `*.py`: 실습 코드 (API 키 불필요, 순수 그래프 개념 위주)
     - `docs/`: 개념 정리 문서
   - `classifier/` — 분류기 패턴 (폴더만 생성, 코드/문서 미작성)
-  - `planner/` — 플래너 패턴 (폴더만 생성, 코드/문서 미작성)
+  - `planner/` — Plan-and-Execute(Planner) 패턴 — Planner/Executor/Replanner/Respond 노드로 목표를 단계별로 계획·실행. LLM 호출부는 `FakeListChatModel`로 대체해 API 키 없이 오프라인 실행/테스트 가능
+    - `planner_prac.py`: 실습 코드
+    - `docs/`: 개념 정리 문서 (웹 검색 기반, 참고 자료 링크 포함)
   - `deepagent/` — deep agent 패턴 (폴더만 생성, 코드/문서 미작성)
 - 새 토픽은 위와 같은 패턴(코드 + `docs/` 개념 문서)으로 폴더를 추가해 나갈 예정
 - `app/` — 위 토픽 폴더들의 학습 내용을 기반으로 만드는 **실제 서비스(제품)** 코드가 들어갈 폴더. 현재는 빈 상태이며, 아래 규칙에 따라 채워짐
