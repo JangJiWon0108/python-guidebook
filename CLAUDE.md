@@ -26,9 +26,13 @@
   - `main.py` → `service/` → `utils/` 계층 구조 예제
   - `docs/`: uv 설정/실행 관련 가이드
 - `db_crud/` — DB CRUD 관련 토픽 (현재는 `docs/` 개념 문서만 있고 코드는 미작성)
-- `lang_graph/` — LangGraph(`langgraph` 패키지) 개념 및 실습 — State/Node/Edge, 조건부 분기(conditional edge), checkpointer(상태 저장/이어서 실행)
-  - `*.py`: 실습 코드 (API 키 불필요, 순수 그래프 개념 위주)
-  - `docs/`: 개념 정리 문서
+- `lang_graph/` — LangGraph(`langgraph` 패키지) 개념 및 실습. 패턴별로 하위 폴더 구성
+  - `basic/` — State/Node/Edge, 조건부 분기(conditional edge), checkpointer(상태 저장/이어서 실행) 등 기본 개념
+    - `*.py`: 실습 코드 (API 키 불필요, 순수 그래프 개념 위주)
+    - `docs/`: 개념 정리 문서
+  - `classifier/` — 분류기 패턴 (폴더만 생성, 코드/문서 미작성)
+  - `planner/` — 플래너 패턴 (폴더만 생성, 코드/문서 미작성)
+  - `deepagent/` — deep agent 패턴 (폴더만 생성, 코드/문서 미작성)
 - 새 토픽은 위와 같은 패턴(코드 + `docs/` 개념 문서)으로 폴더를 추가해 나갈 예정
 - `app/` — 위 토픽 폴더들의 학습 내용을 기반으로 만드는 **실제 서비스(제품)** 코드가 들어갈 폴더. 현재는 빈 상태이며, 아래 규칙에 따라 채워짐
 
