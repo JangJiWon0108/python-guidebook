@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:peps.python.org)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "WebFetch(domain:docs.astral.sh)"
+    ]
+  }
+}

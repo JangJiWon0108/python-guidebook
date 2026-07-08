@@ -1,0 +1,11 @@
+[project]
+name = "python-study"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.138.0",
+    "psutil>=7.2.2",
+    "uvicorn>=0.49.0",
+]
